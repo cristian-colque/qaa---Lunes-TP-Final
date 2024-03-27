@@ -20,7 +20,7 @@ public class BasePage {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-            //driver.manage().deleteAllCookies();
+            driver.manage().deleteAllCookies();
         }
         
     }

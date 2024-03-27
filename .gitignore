@@ -4,18 +4,14 @@
 # Ignore Gradle build output directory
 build
 
-# Selenium
-geckodriver.log
-geckodriver.log.*
-chromedriver.log
-chromedriver.log.*
-
-# Cucumber
-*.feature.cache/
-reports/
-
-# TestNG
-test-output/
-
 # Visual Studio Code
 .vscode/
+
+target/
+
+*.iml
+
+*.log
+
+drivers/
+

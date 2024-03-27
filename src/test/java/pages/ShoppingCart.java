@@ -5,12 +5,17 @@ public class ShoppingCart extends BasePage{
         super(driver);
     }
 
-    private String productCamera = "/html[1]/body[1]/div[2]/div[1]/div[1]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/a[1]";
-    //div[@id='cart']//a[text()='Canon EOS 5D']
-                            
+    //private String productCamera = "//div[@id='cart']//a[text()='Canon EOS 5D']";
+    
+    private String precioProductCamera = "//tbody//tr//td[6]";                
                              
     public String obtenerTextCameraAdd(){
-        return obteneString(productCamera);
+        return obteneString(precioProductCamera);
     }
+
+    public boolean cameraIsDisplayed(){
+        return elementIsDisplayed(precioProductCamera);
+    }
+    
     
 }

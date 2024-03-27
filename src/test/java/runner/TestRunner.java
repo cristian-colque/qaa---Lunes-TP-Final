@@ -12,13 +12,13 @@ import pages.BasePage;
         features = "src/test/resources",
         glue = "steps",
         plugin = { "pretty", "html:target/cucumber-reports"},
-        //tags ="@validarHome"
+        tags ="@validarHome"
        //tags ="@loginValido"
         //tags ="@loginInvalido"
         //tags ="@crearCuenta"
         //tags ="@crearCuentaInvalida"
         //tags ="@agregarProducto"
-        tags ="@agregarProductoAlCarrito"
+        //tags ="@agregarProductoAlCarrito"
 )
 
 public class TestRunner {

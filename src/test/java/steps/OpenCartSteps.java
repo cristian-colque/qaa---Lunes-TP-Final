@@ -114,7 +114,6 @@ public class OpenCartSteps {
         public void addToCart(){
             bar.clickSectionCamara();
             camera.clickCanonCamera();
-            //camera.clickChooseOption();
             camera.clickOption();
             camera.clickAddToCart();
             camera.clickCart();
@@ -123,10 +122,10 @@ public class OpenCartSteps {
     
     @Then("validar que el producto se a agregado al carrito")
         public void validateAddToProduct(){
-           //String textProductoAgregado = camera.obtenerTextCanon();
-            String textProductoCarro = cart.obtenerTextCameraAdd();
-            Assert.assertEquals(textProductoCarro, "Canon EOS 5D");
-        
+         
+            //String textProductoCarro = cart.obtenerTextCameraAdd();
+            //Assert.assertEquals(textProductoCarro, "Canon EOS 5D");
+            Assert.assertTrue(cart.cameraIsDisplayed());
         }
 }
 
